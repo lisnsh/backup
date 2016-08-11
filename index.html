@@ -1,0 +1,68 @@
+<html xmlns="http://www.w3.org/1999/xhtml">  
+    <head>  
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />  
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Setting Page</title>  
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>  
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <style>
+            .add_city{
+				margin-top:10px;
+			}
+
+            .input_city{
+            }
+            .city_name_block{
+			}
+
+			.jumbotron{
+				padding-left:13px;
+			}
+
+			.input_city input
+			{
+				height: 12%;
+				font-size: 30px;
+			}
+
+			.add_city button{
+				height: 9%;
+				font-size: 20px;
+				margin-top: 15px;
+			}
+
+
+         </style>
+    </head>  
+      
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                  <h1>My City</h1> 
+            </div> 
+            <form method="post">
+                <div class="city_name_block" style="display:none">
+                    <div class="alert alert-success">
+                        City Name: {{city_name}} 
+                    </div>
+               </div>       
+               <div class="input_city">
+				   <input type="text" class="form-control"  name="na_city_name" id="city" value={{city_name}}>
+               </div>
+                <div class="add_city">
+                        <button type="submit" class="btn-block btn btn-success">Update</button>
+                </div>
+                
+			</form>
+	   </div>
+    </body>  
+</html>
+
+
